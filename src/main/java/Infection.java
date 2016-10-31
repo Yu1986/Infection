@@ -76,7 +76,7 @@ public class Infection {
         People model = dl.pickModel();
         Infection infection = new Infection(dl);
         List<People> totalInfectedPeople = infection.totalInfection(model);
-        List<People> limitInfectedPeople = infection.limitInfection(model, 2);
+        List<People> limitInfectedPeople = infection.limitInfection(model, 5);
 
         (new File(args[1])).mkdir();
         outputToFile(args[1] + File.separator + "total_infection.csv", totalInfectedPeople);
